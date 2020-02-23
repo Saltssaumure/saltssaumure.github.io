@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "PerfectDOS";
+    src: url("https://static.tumblr.com/6nmlfta/kInq29swf/perfect_dos_vga_437_win.ttf")
+}
+
+*
+{
+    font-family: "PerfectDOS", Consolas, monospace;
+}
+
+h1, h2
+{
+	font-size: 24pt;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+body
+{
+	background: black;
+	color: white;
+}
+
+a
+{
+	color: cyan;
+}
+
+p
+{
+	border: solid yellow;
+	border-width: 0 2px;
+	padding-left: 1em;
+}
+
+img
+{
+	max-width: 900px;
+}
+
+header
+{
+	width: 100%;
+	text-align: center;
+}
+
+#linkos
+{
+	display: flex;
+	justify-content: center;
+}
+
+#linkos>*
+{
+	padding: 0px 10px;
+}
+
+#titlelink
+{
+	font-size: 36pt;
+	text-decoration: none;
+	color: cyan;
+}
+
+#titlelink:hover
+{
+	color: #77F;
+}
