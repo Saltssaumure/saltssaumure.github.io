@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap');
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+}
+
+.pagecontainer
+{
+    height: 100%;
+    font-family: "Economica", sans-serif;
+    background: var(--gary);
+    --gary: rgb(20,10,20);
+    --porple: rgb(165,89,234); /* for sidebar and title*/
+    --darkporple: rgb(88,12,134); /*for shadows*/
+    --brightporple: rgb(138,25,207);
+    --light: rgb(232 192 255);
+    --gradient: radial-gradient(transparent 70%,var(--brightporple));
+}
+
+/*-- sidebar stuff --*/
+
+div.sidebar
+{
+    position: fixed;
+    width: 10vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(var(--darkporple), var(--porple) 5%,var(--brightporple) 95%,var(--darkporple)) ;
+    border-right: 8px solid var(--darkporple);
+    z-index: 2;
+}
+
+.arrows
+{
+    position: absolute;
+    width: 100%;
+    background: transparent;  
+}
+
+    .triangle
+    {
+        border-color: var(--light) transparent;
+        border-style: solid;
+        height: 0px;
+        width: 0px;
+        margin: auto auto;
+    }
+
+        .up
+        {
+            top: 0;
+        }
+
+        .up .triangle
+        {
+            border-width: 25px 20px 0px 20px;
+        }
+
+        .down
+        {
+            bottom: 0;
+        }
+
+        .down .triangle
+        {
+            border-width: 0px 20px 25px 20px;
+        }
+
+nav.pages
+{
+    margin: 0;
+    overflow: auto;
+    height: 100%;
+}
+
+nav.pages::-webkit-scrollbar
+{
+    display: none;
+}
+
+    nav.pages div
+    {
+        border-radius: 50%;
+        margin: 8%;
+        border: 8px solid var(--porple);
+        border-bottom: 8px solid var(--darkporple);
+        box-shadow: 0 5px 20px var(--darkporple);
+    }
+
+    nav.pages div:hover
+    {
+        box-shadow: 0 0 20px white;
+        overflow: visible;
+        
+    }
+        
+        nav.pages div[title="piOS Text Editor"]
+        {
+            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+        }
+
+        nav.pages div[title="piOS Discord Theme"]
+        {
+            background: var(--gradient), url("icons/discordthemeIcon.png") 0/100%;
+        }
+
+        nav.pages div[title="2013 Site Banner"]
+        {
+            background: var(--gradient), url("icons/2013siteIcon.png") 0/100%;
+        }
+
+        nav.pages div[title="IE7 Crash"]
+        {
+            background: var(--gradient), url("icons/ie7Icon.png") 0/100%;
+        }
+
+        nav.pages div[title="testingsiteforhtml Tumblr"]
+        {
+            background: var(--gradient), url("icons/testingsiteIcon.png") 0/100%;
+        }
+
+    /* height equal to width */
+    nav.pages div:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+
+/*-- right area stuff --*/
+
+div#ok
+{
+    margin-left: 10vw;
+    padding: 40px 70px;
+    height: auto;
+    overflow-y: auto;
+}
+
+header
+{
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 20px;
+}
+
+header a
+{
+    text-decoration: none;
+}
+
+header span /*SALTSSAUMURE*/
+{
+    font-weight: bolder;
+    font-size: 160px;
+    letter-spacing: -8px;
+    color: var(--brightporple);
+    /*text-shadow: 0 -4px 2px var(--light), 0 8px 8px var(--brightporple), 0 16px 16px var(--darkporple);*/
+    text-shadow: 0 -4px 0 var(--porple), 0 8px var(--darkporple);
+    text-align: center;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    padding-right: 50px;
+    transform:rotateZ(-2deg);
+}
+
+nav.social /* links to social media */
+{
+    background: var(--brightporple);
+    margin: 33px 0 31px;
+    flex-grow: 100;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: 4px solid var(--porple);
+    border-bottom: 8px solid var(--darkporple);
+}
+
+    nav.social div
+    {
+        border-radius: 50%;
+        width: 90px;
+        height: 90px; 
+        margin: 5px;
+        border: 8px solid var(--porple);
+        border-bottom: 8px solid var(--darkporple);
+        box-shadow: 0 5px 20px var(--darkporple);
+    }
+
+    nav.social div:hover
+    {
+        box-shadow: 0 0 20px white;
+        overflow: visible;
+    }
+
+        nav.social div[title="Twitter"]
+        {
+            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+        }
+
+        nav.social div[title="Tumblr"]
+        {
+            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+        }
+
+        nav.social div[title="PCPartPicker"]
+        {
+            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+        }
+
+        nav.social div[title="PC Database Discord"]
+        {
+            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+        }
+
+        nav.social div[title="Discord ID - Saltssaumure#7557"]
+        {
+            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+        }
+
+        nav.social div[title="Email"]
+        {
+            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+        }
+
+/*-- content --*/
+
+main
+{
+    position: relative;
+    margin-top: 20px;
+    background: var(--brightporple);
+    padding: 50px 8px 8px 8px;
+    overflow: auto;
+}
+
+main h1
+{
+    position: absolute;
+    top: -4px;;
+    left: 6px;
+    margin: 0;
+    font-size: 50px;
+    color: var(--light);
+}
+
+main ul
+{
+    height: 2em;
+    right: 0;
+    top: 7px;
+}
+
+div.inner
+{
+    background: var(--light);
+    overflow: auto;
+    color: black;
+    font-size: 2em;
+    padding: 50px;
+    box-shadow: inset 0 4px 8px var(--darkporple);
+    text-shadow: 1px 1px 1px grey;
+}
+
+p
+{
+    margin-top: 0;
+}
+
+div.inner ul
+{
+    list-style: square;
+}
