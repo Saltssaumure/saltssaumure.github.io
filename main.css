@@ -10,7 +10,7 @@ html, body
     --darkporple: rgb(88,12,134); /*for shadows*/
     --brightporple: rgb(138,25,207);
     --light: rgb(232 192 255);
-    --gradient: radial-gradient(transparent 70%,var(--brightporple));
+    --gradient: radial-gradient(transparent 60%,var(--light));
 }
 
 .pagecontainer
@@ -30,7 +30,7 @@ div.sidebar
     height: 100vh;
     top: 0;
     left: 0;
-    background: linear-gradient(var(--darkporple), var(--porple) 5%,var(--brightporple) 95%,var(--darkporple)) ;
+    background: linear-gradient(var(--darkporple), var(--brightporple) 5%,var(--brightporple) 95%,var(--darkporple)) ;
     border-right: 8px solid var(--darkporple);
     z-index: 2;
 }
@@ -99,29 +99,34 @@ nav.pages::-webkit-scrollbar
         
     }
         
+        nav.pages div[title="Purple"]
+        {
+            background: var(--gradient), var(--brightporple);
+        }
+
         nav.pages div[title="piOS Text Editor"]
         {
-            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+            background: var(--gradient), url("!icons/texteditorIcon.png") 0/100%;
         }
 
         nav.pages div[title="piOS Discord Theme"]
         {
-            background: var(--gradient), url("icons/discordthemeIcon.png") 0/100%;
+            background: var(--gradient), url("!icons/discordthemeIcon.png") 0/100%;
         }
 
         nav.pages div[title="2013 Site Banner"]
         {
-            background: var(--gradient), url("icons/2013siteIcon.png") 0/100%;
+            background: var(--gradient), url("!icons/2013siteIcon.png") 0/100%;
         }
 
         nav.pages div[title="IE7 Crash"]
         {
-            background: var(--gradient), url("icons/ie7Icon.png") 0/100%;
+            background: var(--gradient), url("!icons/ie7Icon.png") 0/100%;
         }
 
-        nav.pages div[title="testingsiteforhtml Tumblr"]
+        nav.pages div[title="2015 Site Banner"]
         {
-            background: var(--gradient), url("icons/testingsiteIcon.png") 0/100%;
+            background: var(--gradient), url("!icons/testingsiteIcon.png") 0/100%;
         }
 
     /* height equal to width */
@@ -151,6 +156,7 @@ header
 header a
 {
     text-decoration: none;
+    color: var(--porple);
 }
 
 header a:visited
@@ -202,32 +208,32 @@ nav.social /* links to social media */
 
         nav.social div[title="Twitter"]
         {
-            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+            background: var(--gradient), url("!icons/twitterIcon.png") 0/100%;
         }
 
         nav.social div[title="Tumblr"]
         {
-            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+            background: var(--gradient), url("!icons/tumblrIcon.png") 0/100%;
         }
 
         nav.social div[title="PCPartPicker"]
         {
-            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+            background: var(--gradient), url("!icons/pcppIcon.png") 0/100%;
         }
 
         nav.social div[title="PC Database Discord"]
         {
-            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+            background: var(--gradient), url("!icons/pcdbIcon.png") 0/100%;
         }
 
         nav.social div[title="Discord ID - Saltssaumure#7557"]
         {
-            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+            background: var(--gradient), url("!icons/discordIcon.png") 0/100%;
         }
 
         nav.social div[title="Email"]
         {
-            background: var(--gradient), url("icons/texteditorIcon.png") 0/100%;
+            background: var(--gradient), url("!icons/emailIcon.png") 0/100%;
         }
 
 /*-- content --*/
@@ -236,7 +242,7 @@ main
 {
     position: relative;
     margin-top: 20px;
-    background: var(--porple);
+    background: linear-gradient(var(--porple) 20%, var(--brightporple));
     padding: 50px 8px 8px 8px;
     overflow: auto;
 }
