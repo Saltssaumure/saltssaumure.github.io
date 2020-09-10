@@ -1,0 +1,33 @@
+#main
+{
+position: relative;
+font-size: 20pt;
+font-family: Arial, sans-serif;
+width: 80%;
+padding: 50px 10%;
+    background: white;
+}
+
+#main h1
+{
+font-size: 48pt;
+text-shadow: 2px 2px 0 rgba(14,13,35,0.7);
+    margin-top: 0;
+}
+
+#main p
+{
+/*column-count: 3;*/
+color: #0e0d23;
+}
+
+/*#main p.odd
+{
+column-count: 2;
+}*/
+
+#main p::first-letter
+{ 
+font-size: 130%;
+font-weight: bold;
+}

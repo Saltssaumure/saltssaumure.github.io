@@ -1,0 +1,20 @@
+#outer
+{
+background: linear-gradient(to bottom,#3A3,#234),radial-gradient(rgba(33,52,145,0.2),rgba(123,235,32,0.5));
+}
+
+#inner
+{
+position: relative;
+width: 80%;
+margin: auto;
+}
+
+#inner h1
+{
+font-family: "Comic Sans MS";
+margin: auto;
+width: 90%;
+position: absolute;
+color: #DFD;
+}

@@ -114,7 +114,7 @@ nav.pages::-webkit-scrollbar
             background: var(--gradient), url("!icons/discordthemeIcon.png") 0/100%;
         }
 
-        nav.pages div[title="2013 Site Banner"]
+        nav.pages div[title="2013-2014"]
         {
             background: var(--gradient), url("!icons/2013siteIcon.png") 0/100%;
         }
@@ -247,18 +247,7 @@ main
     overflow: auto;
 }
 
-main h1
-{
-    position: absolute;
-    top: -4px;;
-    left: 6px;
-    margin: 0;
-    font-size: 55px;
-    color: ghostwhite;
-    text-shadow: 2px 4px 8px var(--darkporple);
-}
-
-main ul
+ul.minmax
 {
     height: 2em;
     right: 0;
@@ -276,12 +265,23 @@ div.inner
     text-shadow: 1px 1px 1px grey;
 }
 
-p
+div.inner>h1
+{
+    position: absolute;
+    top: -4px;;
+    left: 6px;
+    margin: 0;
+    font-size: 55px;
+    color: ghostwhite;
+    text-shadow: 2px 4px 8px var(--darkporple);
+}
+
+div.inner>p
 {
     margin-top: 0;
 }
 
-div.inner ul
+div.inner>ul
 {
     list-style: square;
 }

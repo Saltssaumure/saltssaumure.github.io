@@ -1,0 +1,96 @@
+body
+{
+margin: 0;
+}
+
+#header
+{
+position: fixed;
+width: 100%;
+height: 80px;
+background-color: #0e0d23;
+padding: 10px 0;
+box-shadow: 0 4px 0 rgba(14,13,35,0.7);
+z-index: 100;
+}
+
+ul
+{
+display: inline-block;
+margin: 0;
+}
+
+li
+{
+display: inline-block;
+margin-right: 20px;
+}
+
+li img
+{
+border: 2px solid rgba(255,255,255,0.7);
+border-radius: 40px;
+box-shadow: 2px 2px 0px grey;
+}
+
+li:first-child img
+{
+border: 2px solid white;
+background-color: rgba(255,255,255,0.7);
+}
+
+li img:hover,
+input[type="submit"]:hover
+{
+position: relative;
+box-shadow: none;
+left: 2px;
+top: 2px;
+padding: 0;
+}
+
+#search
+{
+position: absolute;
+top: 10px;
+right: 40px;
+}
+
+input[type="text"],
+input[type="submit"]
+{
+border: 0;
+}
+
+input[type="text"]
+{
+height: 80px;
+padding: 0 0 0 20px;
+color: grey;
+font-size: 16pt;
+border-radius: 40px 0 0 40px;
+box-shadow: 2px 2px 0px grey inset;
+}
+
+input[type="submit"]
+{
+position: relative;
+top: -2px;
+height: 80px;
+width: 60px;
+padding: 0;
+border-radius: 0 40px 40px 0;
+background: rgba(255,255,255,0.7) url("search.png") no-repeat center;
+color: transparent;
+box-shadow: 2px 2px 0 grey;
+}
+
+#main
+{
+position: relative;
+font-size: 20pt;
+font-family: Arial, sans-serif;
+top: 103px;
+width: 80%;
+padding: 1px 10%;
+}
